@@ -3,7 +3,7 @@ module.exports = {
     if (!headers) cb({ error: "no headers" });
     else {
       const obj = {};
-      obj.ip = ip;
+      obj.ipaddress = ip;
       obj.software = headers["user-agent"];
       obj.language = headers["accept-language"];
       cb(null, obj);
